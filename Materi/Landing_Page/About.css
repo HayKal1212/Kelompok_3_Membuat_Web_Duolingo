@@ -5,9 +5,9 @@
 /* Nav*/
 * {
   box-sizing: border-box;
-  color: #f3f3f3;
   scroll-behavior: smooth;
   font-family: "Lexend Exa", sans-serif;
+  color: #099900;
 }
 
 .navbar,
