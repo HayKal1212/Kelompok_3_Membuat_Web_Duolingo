@@ -25,16 +25,22 @@
       />
       <h2>Sign In</h2>
       <h3>Welcome Back !</h3>
-      <form class="form">
+      <form class="form" action="../Landing_Page/Home.html" method="GET">
         <div class="textbox">
           <span class="material-symbols-outlined"> account_circle </span>
-          <input type="email" placeholder="Username" required />
+          <input type="email" placeholder="Username" name="email" required />
         </div>
         <div class="textbox">
           <span class="material-symbols-outlined"> lock </span>
-          <input type="password" placeholder="Password" required />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
         </div>
-        <a href="../Landing_Page/Home.html">Log In</a>
+        <button type="submit" class="login-btn">Log In</button>
+
         <div class="signup-container">
           <a href="../Landing_Page/Home.html" class="google-btn">
             <img src="../Assests/Pic/icons8-google.svg" alt="Google Icon" />
@@ -52,6 +58,7 @@
           </a>
         </div>
       </form>
+
       <a>Forgot password?</a>
       <footer>
         Need an account? Sign up

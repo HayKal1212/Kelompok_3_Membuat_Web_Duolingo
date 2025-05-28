@@ -111,6 +111,25 @@ body {
   margin-top: 10px;
 }
 
+.login-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #035200;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #45a400; /* Sedikit lebih gelap saat hover */
+}
+
 .google-btn,
 .facebook-btn {
   display: flex;
