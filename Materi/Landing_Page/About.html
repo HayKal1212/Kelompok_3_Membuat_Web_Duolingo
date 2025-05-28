@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../Landing_Page/About.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+  </head>
+  <body onload="myFunction()">
+    <div class="container">
+      <div class="row align-items-center py-3 position-absolute top-50 start-50 translate-middle">
+        <div id="loading"></div>
+      </div>
+    </div>
+    <div style="display:none;" id="myDiv">
+       <div class="background"></div>
+
+    <!-- Bagian NAV-BAR -->
+
+    <nav class="navbar">
+      <img class="navbar-logo" src="../Assests/Pic/Duolingo_Assets/7564363_duolingo_logo_brand_icon.svg" />
+    </nav>
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
+    <nav class="menu">
+      <a href="../Landing_Page/Home.html" style="animation-delay: 0.1s">Home</a>
+      <a href="../Landing_Page/About.html" style="animation-delay: 0.2s">About</a>
+      <a href="../Lessons/Lesson.html" style="animation-delay: 0.3s">Lessons</a>
+      <a href="../Landing_Page/Leaderboards.html" style="animation-delay: 0.4s">Leaderboards</a>
+      <a href="../Landing_Page/InfoAccount.html" style="animation-delay: 0.5s">Profile</a>
+      <a href="../Login/Login.html" style="animation-delay: 0.6s">Log Out</a>
+    </nav>
+
+    <!-- Bagian Isi Content - SECTION -->
+
+    <section class="second-section" style="margin-top: 20%;">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h1>Tentang</h1>
+        <div>
+        </div>
+      </div>
+      
+      <!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4 align-items-center features-item">
+          <div
+            class="col-md-5 d-flex align-items-center"
+            data-aos="zoom-out"
+            data-aos-delay="100"
+          >
+            <img
+              src="../Assests/Pictures/Apps2.png"
+              class="img-fluid"
+              alt=""
+              style="width: auto; height: 30%;"
+            />
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <span>
+                Duolingo adalah aplikasi dan situs web pembelajaran bahasa yang menggunakan pendekatan gamifikasi untuk membuat pembelajaran bahasa menjadi lebih mudah dan menyenangkan. Aplikasi ini menawarkan berbagai kursus bahasa, termasuk bahasa-bahasa populer seperti Spanyol, Prancis, Jerman, dan Jepang, serta bahasa yang kurang umum seperti Irlandia, Welsh, dan Navajo. 
+            </span>
+          </div>
+        </div>
+
+        <div class="row gy-4 align-items-center features-item">
+          <div
+            class="col-md-5 order-1 order-md-2 d-flex align-items-center"
+            data-aos="zoom-out"
+            data-aos-delay="200"
+          >
+            <img
+              src="../Assests/Pictures/pngwing.com (3).png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-md-7 order-2 order-md-1"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h1>Fitur</h1>
+            <ul>
+                <li>
+                <i class="bi bi-check"></i>
+                <h2>Gamifikasi</h2>
+              </li>
+              <p>Duolingo menggunakan elemen permainan seperti poin, level, dan tantangan untuk memotivasi pengguna belajar bahasa.</p>
+              <li>
+                <i class="bi bi-check"></i>
+                <h2>Pelajaran interaktif</h2>
+              </li>
+              <p>Pelajaran di Duolingo dirancang untuk menjadi interaktif dan menyenangkan, dengan latihan yang bervariasi seperti pilihan ganda, melengkapi, dan berbicara.</p>
+              <li>
+                <i class="bi bi-check"></i>
+                <h2>Pelajaran yang singkat dan padat</h2>
+              </li>
+              <p>Pelajaran di Duolingo biasanya singkat dan padat, sehingga pengguna dapat belajar bahasa dengan mudah dan efektif dalam waktu yang singkat.</p>
+              <li>
+              <i class="bi bi-check"></i>
+              <h2>Pilihan bahasa yang luas</h2>
+              </li>
+              <p>Duolingo menawarkan berbagai kursus bahasa yang dapat disesuaikan dengan kebutuhan dan preferensi pengguna.</p>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+      <section class="second-section" style="margin-top: 20%;">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h1>Tujuan</h1>
+          <div>
+          </div>
+        </div>
+        <!-- End Section Title -->
+  
+        <div class="container">
+          <div class="row gy-4 align-items-center features-item">
+            <div
+              class="col-md-5 d-flex align-items-center"
+              data-aos="zoom-out"
+              data-aos-delay="100"
+            >
+              <img
+                src="../Assests/Pictures/Apps2.png"
+                class="img-fluid"
+                alt=""
+                style="width: auto; height: 30%;"
+              />
+            </div>
+            <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+              <span>
+                Menyediakan pembelajaran bahasa yang mudah, menyenangkan, dan gratis bagi semua orang. Aplikasi ini membantu pengguna mempelajari bahasa asing secara mandiri dan fleksibel untuk berbagai keperluan, seperti pendidikan, pekerjaan, atau hobi.
+              </span>
+            </div>
+          </div>
+  
+          <div class="row gy-4 align-items-center features-item">
+            <div
+              class="col-md-5 order-1 order-md-2 d-flex align-items-center"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            >
+              <img
+                src="../Assests/Pictures/Duo_PencilBoarding.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-md-7 order-2 order-md-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h1>Manfaat</h1>
+              <p>
+                Duolingo bermanfaat untuk membantu pengguna belajar bahasa asing secara gratis, mudah, dan menyenangkan. Dengan metode interaktif dan sistem latihan harian, aplikasi ini mendorong konsistensi belajar dan cocok untuk semua kalangan, terutama pemula.
+              </p>
+            </div>
+          </div>
+          <!-- Features Item -->
+  
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+              <img src="../Assests/Pictures/pngwing.com (3).png" class="img-fluid" style="width: auto; height: 30%; margin-top: 20px;" alt="" />
+            </div>
+            <div class="col-md-7" data-aos="fade-up">
+              <h3>
+                Kegunaan
+              </h3>
+              <ul>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span
+                    >Belajar bahasa asing secara mandiri melalui aplikasi atau situs web.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i
+                  ><span>
+                    Melatih keterampilan bahasa seperti membaca, menulis, mendengarkan, dan berbicara.</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span
+                    >Meningkatkan kosakata dan pemahaman tata bahasa (grammar).</span>.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Features Item -->
+  
+          </div>
+        </div>
+      </section>
+  
+  
+      <!-- HALAMAN FOOTER -->
+       <div class="background">
+        <footer>
+          <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="100%"
+              height="100%"
+              viewBox="0 0 1600 900"
+            >
+              <defs>
+                <path
+                  id="wave"
+                  fill="rgba(105, 27, 252, 0.6)"
+                  d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+          s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+                />
+              </defs>
+              <g>
+                <use xlink:href="#wave" opacity=".4">
+                  <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="8s"
+                    calcMode="spline"
+                    values="270 230; -334 180; 270 230"
+                    keyTimes="0; .5; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite"
+                  />
+                </use>
+                <use xlink:href="#wave" opacity=".6">
+                  <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="6s"
+                    calcMode="spline"
+                    values="-270 230;243 220;-270 230"
+                    keyTimes="0; .6; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite"
+                  />
+                </use>
+                <use xlink:href="#wave" opacty=".9">
+                  <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="4s"
+                    calcMode="spline"
+                    values="0 230;-140 200;0 230"
+                    keyTimes="0; .4; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite"
+                  />
+                </use>
+              </g>
+            </svg>
+            </footer>
+      </div>
+     
+      <!--BATAS FOOTER -->
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="../Landing_Page/Home.js"></script>
+    </body>
+  </html>

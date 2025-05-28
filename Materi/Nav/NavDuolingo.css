@@ -1,0 +1,111 @@
+/* Nav*/
+* {
+  box-sizing: border-box;
+}
+
+.navbar,
+.navbar-Duolingo,
+.menu,
+.background {
+  position: fixed;
+}
+
+.background {
+  z-index: 1;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background-image: url("../Assests/Pic/Duolingo_Assets/green-gradient-3840x2160-19837.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5;
+}
+
+body.open .background {
+  filter: blur(25px);
+}
+
+.navbar {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 72px;
+  padding-left: 20px;
+  padding-right: 72px;
+  background: #8affb100;
+  color: #ffffff;
+}
+
+.navbar > button {
+  font-size: 25px;
+}
+
+.navbar-logo {
+  height: 50px;
+}
+
+.navbar-Duolingo {
+  z-index: 3;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  background-image: url(../Assests/Pic/Duolingo_Assets/MenuButton.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45px;
+}
+
+
+body.open .navbar-Duolingo button {
+  background-image url("");
+}
+
+.navbar-search {
+  border: 0;
+  height: 40px;
+  background-color: #00ff00 url("");
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+  border: 0;
+  border-radius: 6px;
+  padding-left: 36px;
+  width: 180px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* SECTION 
+  
+  section {
+    display: grid;
+    grid-template-columns: 50% 45%;
+    place-items: center;
+    gap: 60px;
+    min-height: 100vh;
+    padding: 20px 60px;
+  }
+  
+  /* Content 
+  .content {
+    max-width: 600px;
+  }
+  
+  .content h1 {
+    font-family: "";
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .content p {
+  }*/

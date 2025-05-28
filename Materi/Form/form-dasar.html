@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <h1>Login Form</h1>
+
+    <form onsubmit="return login()">
+      Username: <input type="text" id="user" /><br /><br />
+      Password: <input type="password" id="pass" /><br /><br />
+      <input type="submit" value="Login" />
+    </form>
+
+    <p id="pesan"></p>
+
+    <script>
+      function login() {
+        var u = document.getElementById("user").value;
+        var p = document.getElementById("pass").value;
+
+        if (u == "admin" && p == "123") {
+          document.getElementById("pesan").innerHTML = "Login berhasil!";
+        } else {
+          document.getElementById("pesan").innerHTML = "Salah coy, coba lagi!";
+        }
+
+        return false;
+      }
+    </script>
+  </body>
+</html>

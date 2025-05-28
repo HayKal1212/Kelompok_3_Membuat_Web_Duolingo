@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaram</title>
+    <link rel="stylesheet" href="../Membership/Payment.css" />
+  </head>
+  <body>
+    <header class="payment-header">
+      <a href="../Membership/Mem.html" class="back-button">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back</span>
+      </a>
+      <img
+        src="../Assests/Pic/Duolingo_Assets/7564364_duolingo_logo_brand_icon.svg"
+        alt="Duolingo Logo"
+        class="logo"
+      />
+    </header>
+
+    <div class="payment-container">
+      <div class="payment-form">
+        <div class="form-card">
+          <h2 class="form-title">Payment Method</h2>
+          <div class="form-group">
+            <label for="card-number">Nomor HP</label>
+            <input
+              type="text"
+              id="card-number"
+              placeholder="0812 3456 789"
+              maxlength="13"
+            />
+            <div class="card-icons">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/028/766/359/non_2x/dana-payment-icon-symbol-free-png.png"
+                class="card-icon"
+                alt="Dana"
+              />
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/028/766/360/small_2x/ovo-ewallet-payment-icon-symbol-free-png.png"
+                class="card-icon"
+                alt="OVO"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswlptkuFRfuREkl5ZAPJTgRYxAfmp00GvGQ&s"
+                class="card-icon"
+                alt="Gopay"
+              />
+            </div>
+          </div>
+        
+        <div class="form-card">
+          <h2 class="form-title">Informasi Pembayaran</h2>
+          <div class="form-group">
+            <label for="email">Alamat E-Mail</label>
+            <input type="email" id="email" placeholder="your@email.com" />
+          </div>
+        </div>
+        <div class="security-footer">
+          <span class="lock-icon">🔒</span>
+          <span>Your payment is secure and encrypted</span>
+        </div>
+      </div>
+      <div class="order-summary">
+        <div class="summary-card">
+          <h3 class="plan-name">Super Duolingo</h3>
+          <div class="plan-price">Rp 104.916</div>
+          <div class="plan-period">Per Bulan</div>
+          <div class="divider"></div>
+          <ul class="features-list">
+                          <li>Learning Content</li>
+              <li>Unlimited Hearts</li>
+              <li>Skill Practice</li>
+              <li>Mistake Review</li>
+              <li>Free Challenge Entry</li>
+              <li>No Ads</li>
+            </ul>
+          <div class="divider"></div>
+          <div class="total">
+            <span>Jumlah:</span>
+            <a>Rp 107.000 (Termasuk PPN)</a>
+          </div>
+ <a href="../Landing_Page/InfoAccount.html" class="pay-button">Complete Payment</a>
+          <p
+            style="
+              text-align: center;
+              margin-top: 1rem;
+              font-size: 0.9rem;
+              color: #666;
+            "
+          >
+            By continuing, you agree to our
+            <a href="../Privacy&Policy.html" style="color: #58a700">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../Membership/Payment.js"></script>
+  </body>
+</html>

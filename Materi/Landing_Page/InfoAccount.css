@@ -1,0 +1,314 @@
+/* IMPORT CUSTOM FONT KALIAN DISINI */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Lexend+Zetta:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Nav*/
+* {
+  box-sizing: border-box;
+  color: #f3f3f3;
+  scroll-behavior: smooth;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+.navbar,
+.navbar-burger,
+.menu,
+.section {
+  position: fixed;
+}
+
+body {
+  background: linear-gradient(#2f3339);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.open .content {
+  filter: blur(10px);
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navbar {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 72px;
+  padding: 0 72px 0 20px;
+  background: transparent;
+  color: #f9f9f9;
+}
+
+.navbar > button {
+  font-size: 25px;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin: 0;
+}
+
+.navbar-burger {
+  z-index: 3;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  background-image: url("../Assests/Pictures/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.open .navbar-burger {
+  background-image: url("../Assests/Pictures/close.svg");
+}
+
+.navbar-search {
+  border: 0;
+  height: 40px;
+  background: #2f3339 url("../Assests/Pictures/search.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+  border-radius: 6px;
+  padding-left: 36px;
+  width: 180px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-search::placeholder {
+  color: #a7a7a7;
+}
+
+.menu {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+body.open .menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu > a {
+  color: #f9f9f9;
+  font-size: 32px;
+  font-family: "Euclid Circular A", sans-serif;
+  text-decoration: none;
+  transition: border 0.3s, padding 0.3s;
+}
+
+body.open .menu > a {
+  animation: appear 0.3s both;
+  border: 2px solid #14ff47;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 50px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ============= SECTION-1 =======================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+}
+
+.profile-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #e0e0e0;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.nickname {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.joined-date {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.subscription {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.subscribed {
+  background-color: #e3f7e8;
+  color: #27ae60;
+}
+
+.not-subscribed {
+  background-color: #ffebee;
+  color: #e74c3c;
+}
+
+.stats-section {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.stat-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.stat-value {
+  font-size: 22px;
+  font-weight: 600;
+  color: #3498db;
+  margin-bottom: 3px;
+}
+
+.stat-value-gold {
+  font-size: 22px;
+  font-weight: 600;
+  color: #b0ae00;
+  margin-bottom: 3px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #7f8c8d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.achievements-section {
+  text-align: left;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.achievement {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.achievement-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.achievement-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.achievement-date {
+  font-size: 10px;
+  color: #95a5a6;
+  margin-top: 3px;
+}
+
+#myDiv {
+  display: none;
+}
+
+#loading {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(#6de1d2, #ffd63a, #ffa955);
+  animation: zeroRotation 1s ease infinite alternate-reverse;
+}
+
+@keyframes zeroRotation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(0) rotate(360deg);
+  }
+}

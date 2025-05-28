@@ -1,0 +1,508 @@
+/* IMPORT CUSTOM FONT KALIAN DISINI */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Lexend+Zetta:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Lexend+Zetta:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Nav*/
+* {
+  box-sizing: border-box;
+  color: #f3f3f3;
+  scroll-behavior: smooth;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+.navbar,
+.navbar-burger,
+.menu,
+.section {
+  position: fixed;
+}
+
+/*.background {
+  z-index: 1;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background-image: url("../assets/picture/learn.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5;
+}*/
+body {
+  background: linear-gradient(#2f3339);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body.open .content {
+  filter: blur(10px);
+}
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.navbar {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 72px;
+  padding-left: 20px;
+  padding-right: 72px;
+  background: transparent;
+  color: #f9f9f9;
+}
+
+.navbar > button {
+  font-size: 25px;
+}
+
+.navbar-logo {
+  height: 60px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.navbar-burger {
+  z-index: 3;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  background-image: url("../Assests/Pictures/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.open .navbar-burger {
+  background-image: url("../Assests/Pictures/close.svg");
+}
+
+.navbar-search {
+  border: 0;
+  height: 40px;
+  background: #2f3339 url("../Assests/Pictures/search.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+  border: 0;
+  border-radius: 6px;
+  padding-left: 36px;
+  width: 180px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-search::placeholder {
+  color: #a7a7a7;
+}
+
+.menu {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  position: fixed;
+}
+
+body.open .menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu > a {
+  color: #f9f9f9;
+  font-size: 32px;
+  font-family: "Euclid Circular A", sans-serif;
+  text-decoration: none;
+  transition: border 0.3s, padding 0.3s;
+}
+
+body.open .menu > a {
+  animation: appear 0.3s both;
+  border: 2px solid #14ff47;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 50px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* =============  SECTION-1  =======================*/
+.first {
+  display: grid;
+  grid-template-columns: 45% 50%;
+  place-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+  .first {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+
+.description {
+  color: #f3f3f3;
+  padding: 0 50px;
+}
+
+.description h1 {
+  display: grid;
+  grid-template-columns: 50% 45%;
+  place-items: center;
+  gap: 60px;
+  padding: 20px 60px;
+  font-family: "Lexend Exa", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.description p {
+  font-family: "Lexend Exa", sans-serif;
+  font-size: clamp(0.9rem, 3vw, 1.25rem);
+  font-weight: 300;
+  line-height: 3.5;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.svg-pict {
+  display: grid;
+  grid-template-columns: 45% 50%;
+  place-items: center;
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+  padding: 100px;
+  margin-right: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+/** ================  SECOND - SECTION ================================**/
+
+.second-section .features-item {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.second-section .features-item + .features-item {
+  margin-top: 100px;
+}
+
+@media (max-width: 640px) {
+  .second-section .features-item + .features-item {
+    margin-top: 40px;
+  }
+}
+
+.second-section .features-item h3 {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.second-section .features-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.second-section .features-item ul li {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.second-section .features-item ul li:last-child {
+  padding-bottom: 0;
+}
+
+.second-section .features-item ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--accent-color);
+}
+
+.second-section .features-item p:last-child {
+  margin-bottom: 0;
+}
+
+/** SECTION - CEO **/
+.ceo .team-member .member-img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ceo .team-member .social {
+  position: absolute;
+  left: 0;
+  top: -18px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ceo .team-member .social a {
+  transition: color 0.3s;
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  margin: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.ceo .team-member .social a i {
+  line-height: 0;
+  font-size: 16px;
+}
+
+.ceo .team-member .social a:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
+}
+
+.ceo .team-member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.ceo .team-member .member-info {
+  padding: 30px 15px;
+  text-align: center;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background: #a7a7a7;
+  margin: -50px 20px 0 20px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.ceo .team-member .member-info h4 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.ceo .team-member .member-info span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.ceo .team-member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.ceo .team-member:hover .social {
+  opacity: 1;
+}
+/** ========== SECTION - JURUSAN ==================== **/
+
+.jurusan .nav-tabs {
+  border: 0;
+}
+
+.jurusan .nav-link {
+  background-color: #a7a7a7;
+  color: #2f3339;
+  border: 0;
+  padding: 25px 20px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.jurusan .nav-link i {
+  font-size: 32px;
+  line-height: 0;
+}
+
+.jurusan .nav-link h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+}
+
+.jurusan .nav-link:hover {
+  color: var(--accent-color);
+}
+
+.jurusan .nav-link:hover,
+.jurusan .nav-link.active {
+  transition: 0.3s;
+  background: #112c26;
+  color: #deea74 !important;
+  border-color: var(--accent-color);
+}
+
+.jurusan .nav-link:hover h4,
+.jurusan .nav-link.active h4 {
+  color: var(--contrast-color);
+}
+
+.jurusan .nav-link:hover i,
+.jurusan .nav-link.active i {
+  color: var(--contrast-color) !important;
+}
+
+.jurusan .tab-content {
+  margin-top: 30px;
+}
+
+.jurusan .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.jurusan .tab-pane h3 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.jurusan .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.jurusan .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.jurusan .tab-pane ul i {
+  font-size: 24px;
+  margin-right: 4px;
+  color: var(--accent-color);
+}
+
+.jurusan .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+}
+
+.background {
+  position: relative;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+  padding-bottom: 80px;
+  padding-left: 60px;
+  width: 100%;
+}
+
+/** =========== LOADING - ANIMATION ===================**/
+#myDiv {
+  display: none;
+}
+#loading {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(#6de1d2, #ffd63a, #ffa955);
+  box-sizing: border-box;
+  animation: zeroRotation 1s ease infinite alternate-reverse;
+}
+
+@keyframes zeroRotation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(0) rotate(360deg);
+  }
+}
+
+/** MEDIA - QUERY 
+
+MEDIA QUERY INI MEMBANTU KE-RESPONSIVITAS TERHADAP WEBVIEW DALAM BENTUK MOBILE DISPLAY
+**/
+
+@media (max-width: 930px) {
+  .first {
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 40%;
+    grid-template-areas:
+      "slider"
+      "content";
+    align-items: center;
+    gap: 54px;
+    padding: 80px;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+  .description {
+    grid-area: content;
+    text-align: center;
+  }
+  .description h1 {
+    margin-left: 40px;
+  }
+  .description p {
+    margin-right: 50px;
+  }
+  .svg-pict {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 40%;
+    grid-template-areas:
+      "slider"
+      "content";
+    align-content: center;
+    gap: 64px;
+    padding-bottom: 85%;
+  }
+}

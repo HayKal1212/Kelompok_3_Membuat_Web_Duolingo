@@ -1,0 +1,184 @@
+:root {
+  --green: #58a700;
+  --light-green: #b5e550;
+  --dark-green: #3c7c00;
+  --white: #ffffff;
+  --blue: #1cb0f6;
+  --red: #ff4b4b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  color: var(--green);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.streak {
+  display: flex;
+  align-items: center;
+  background-color: var(--blue);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.streak i {
+  margin-right: 5px;
+}
+
+.progress-container {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 10px;
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  background-color: var(--green);
+  height: 100%;
+  border-radius: 10px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.lesson-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.question {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.option {
+  background-color: var(--white);
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.option:hover {
+  border-color: var(--green);
+  transform: translateY(-2px);
+}
+
+.check-button {
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.check-button:hover {
+  background-color: var(--dark-green);
+}
+
+.check-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.feedback {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+}
+
+.correct {
+  background-color: rgba(88, 167, 0, 0.1);
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.incorrect {
+  background-color: rgba(255, 75, 75, 0.1);
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.next-button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  display: none;
+}
+
+.next-button:hover {
+  opacity: 0.9;
+}
+
+.xp-gained {
+  color: var(--green);
+  font-weight: bold;
+  margin-top: 10px;
+  display: none;
+}
+
+.selected {
+  border-color: var(--blue);
+  background-color: rgba(28, 176, 246, 0.1);
+}
+
+.correct-answer {
+  border-color: var(--green);
+  background-color: rgba(88, 167, 0, 0.1);
+}
+
+.incorrect-answer {
+  border-color: var(--red);
+  background-color: rgba(255, 75, 75, 0.1);
+}
